@@ -13,5 +13,10 @@ def send_welcome(message):
 def echo_message(message):
     bot.reply_to(message, message.text)
 
+ # Set up the webhook URL
+webhook_url = 'https://oshiboka.github.io/'
+
+   # Set the webhook
+bot.set_webhook(url=webhook_url)
 # Start the bot
 bot.polling()
